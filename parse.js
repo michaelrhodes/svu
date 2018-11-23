@@ -1,12 +1,12 @@
-var surl = require('./short')
+var short = require('./short')
 var share = require('./share')
 var embed = require('./embed')
 
 module.exports = parse
 
 function parse (url, cb) {
-  surl.pattern.test(url) ?
-    surl.expand(url, function (err, url) {
+  short.pattern.test(url) ?
+    short.expand(url, function (err, url) {
       err ? cb(err) : then(url)
     }) :
     process.nextTick(function () {
