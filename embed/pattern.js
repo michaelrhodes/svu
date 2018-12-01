@@ -1,1 +1,1 @@
-module.exports = /^[^\/]+?\/\/www.google.com\/maps\/embed\?pb=([^&"]+).*$/
+module.exports = /^[^\/]+?\/\/www\.google\.[^\/]+\/maps\/embed\?pb=([^&"]+).*$/

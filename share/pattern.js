@@ -1,1 +1,1 @@
-module.exports = /^[^\/]+?\/\/www.google.com\/maps\/@([^\/]+)\/data=([^?]+).*$/
+module.exports = /^[^\/]+?\/\/www\.google\.[^\/]+\/maps\/@([^\/]+)\/data=([^?]+).*$/
