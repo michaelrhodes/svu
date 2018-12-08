@@ -3,7 +3,10 @@ var template = 'https://www.google.com/maps/embed?pb=!6m8!1m7!1s{id}!2m2!1d{lati
 module.exports = stringify
 
 function stringify (parsed) {
-  if (parsed.type === 'share') parsed.pitch -= 90
+  if (parsed.type === 'share') {
+    parsed.pitch -= 90
+    parsed.fov = 1.5
+  }
 
   return template
     .replace('{id}', parsed.id)
